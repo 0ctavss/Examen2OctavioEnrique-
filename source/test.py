@@ -19,10 +19,10 @@ class TestCocinero(unittest.TestCase):
         self.assertEqual(objeto.ObtieneMasBailable([1, 2, 3]),3) 
 
     def test_ObtieneMasBailable2(self): 
-        self.assertEqual(objeto.ObtieneMasBailable([4, 5, 6]),6)    
+        self.assertEqual(objeto.ObtieneMasBailable([4, 90, 6]),890)    
 
     def test_VerificaListaCanciones(self): 
-        self.assertEqual(objeto.VerificaListaCanciones(["Tengo 30", "Blood", "Poco a Poco"]), 1)  
+        self.assertEqual(objeto.VerificaListaCanciones(["Tengo 30", "Blood", "Poco a Poco"]), 0)  
  
     def test_VerificaListaCanciones2(self): 
         self.assertEqual(objeto.VerificaListaCanciones(["Procura", "Remember Me", "Feeling"]), 1)  
