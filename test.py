@@ -26,6 +26,9 @@ class TestCocinero(unittest.TestCase):
  
     def test_VerificaListaCanciones2(self): 
         self.assertEqual(objeto.VerificaListaCanciones(["Procura", "Remember Me", "Feeling"]), 1)  
+
+    def test_Encuentra (self):
+        self.assertEqual(objeto.Encuentra([1,2,3,44], 44),1)
     
         
 if __name__ == "__main__":
